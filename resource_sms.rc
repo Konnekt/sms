@@ -1,0 +1,194 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MT_SMS              ICON                    "mt_sms.ico"
+IDI_OVR_ERROR           ICON                    "ovr_error.ico"
+IDI_OVR_FINISH          ICON                    "ovr_finish.ico"
+IDI_OVR_START           ICON                    "ovr_start.ico"
+IDI_OVR_WARN            ICON                    "ovr_warn.ico"
+IDI_SMS_LOGO            ICON                    "sms_logo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SMS DIALOGEX 0, 0, 263, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Wysy³anie SMSa"
+FONT 8, "Tahoma", 400, 0, 0xEE
+BEGIN
+    DEFPUSHBUTTON   "Wyœlij",IDOK,193,4,65,14
+    CONTROL         "",IDC_NUMBER,"ComboBoxEx32",CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP,3,4,
+                    107,111
+    CONTROL         "",IDC_GATE,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,114,4,74,110
+    ICON            32515,IDC_INFOICON,5,20,20,20,SS_REALSIZEIMAGE
+    LTEXT           "Wpisz numer i wybierz bramkê!",IDC_INFO,30,20,228,16
+    EDITTEXT        IDC_SMS,3,42,255,69,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Podpis",IDC_SIGGROUP,3,111,255,24
+    EDITTEXT        IDC_MYSIG,10,120,205,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATUS,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,131,122,132,110
+    CONTROL         "Zapisz",IDC_SAVESIG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,221,121,33,10
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 258
+        VERTGUIDE, 30
+        VERTGUIDE, 114
+        VERTGUIDE, 188
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 134
+        HORZGUIDE, 42
+        HORZGUIDE, 111
+        HORZGUIDE, 131
+    END
+
+    IDD_GETTOKEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,2,0
+ PRODUCTVERSION 0,6,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041504b0"
+        BEGIN
+            VALUE "CompanyName", "Stamina"
+            VALUE "FileDescription", "Wysy³anie SMSów"
+            VALUE "FileVersion", "1.8.2"
+            VALUE "InternalName", "SMS"
+            VALUE "LegalCopyright", "Copyright (C) Stamina 2002,2003,2004,2005"
+            VALUE "OriginalFilename", "sms.dll"
+            VALUE "ProductName", "SMS"
+            VALUE "ProductVersion", "0.6"
+            VALUE "URL", "http://www.konnekt.info"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x415, 1200
+    END
+END
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
